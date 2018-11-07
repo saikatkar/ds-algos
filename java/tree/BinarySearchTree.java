@@ -1,30 +1,21 @@
 package me.practice.tree;
 
+import java.util.Stack;
+
 /**
  * @author saikatkar1
  *
  */
 public class BinarySearchTree {
 	
-	Node root;
+	public Node root;
 	
 	/**
 	 * @author saikatkar1
 	 *
 	 * @param <T>
 	 */
-	static class Node{
-		
-		Node right;
-		Node left;
-		int key;
-		
-		Node(int key){
-			this.key = key;
-		}
 
-		
-	}
 	
 	public BinarySearchTree() {
 		// TODO Auto-generated constructor stub
@@ -53,17 +44,80 @@ public class BinarySearchTree {
 		
 	}
 	public void inorder() {
-		inorderRec(this.root);
+		inorder(this.root);
 	}
-	private void inorderRec(Node root) {
+	public void inorder(Node root) {
 		
 		if(root!=null) {
-			inorderRec(root.left);
+			inorder(root.left);
 			System.out.print(root.key+" ");
-			inorderRec(root.right);
+			inorder(root.right);
 		}
 		
 		
+	}
+	
+	/**
+	 * @param root
+	 */
+	public static void inorderStack(Node root) {
+		
+		Stack <Node> stack = new Stack<Node>();
+		Node node = root;
+		while(!stack.isEmpty() || node!=null) {
+			while(node!=null) {
+				stack.push(node);
+				node = node.left;
+			}
+			node = stack.pop();
+			System.out.print(node.key + " ");
+			node = node.right;
+			
+		}
+		
+	}
+	
+	public static void preorderStack(Node root) {
+		
+		Stack <Node> stack = new Stack<Node>();
+		Node node = root;
+		while(!stack.isEmpty() || node!=null) {
+			while(node!=null) {
+				System.out.print(node.key+" ");
+				stack.push(node);
+				node = node.left;
+			}
+			node=stack.pop();
+			node = node.right;
+			//System.out.print(node.key + " ");
+
+			
+		}
+		
+	}
+	
+	public static void postorderStack(Node root) {
+		
+		Stack <Node> stack = new Stack<Node>();
+		Node node = root;
+		while(!stack.isEmpty() || node!=null) {
+			while(node!=null) {
+				if(node.right!=null) {
+					stack.push(node.right);
+				}
+				stack.push(node);
+				node = node.left;
+			}
+			node=stack.pop();
+			if(node.right!=null && !stack.isEmpty() && node.right.key == stack.peek().key) {
+				Node temp = stack.pop();
+				stack.push(node);
+				node = temp;
+			}else {
+				System.out.print(node.key + " ");
+				node = null;
+			}
+		}
 	}
 	
 	/**

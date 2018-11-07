@@ -23,9 +23,20 @@ public class TreeTest {
 		System.out.println(searchTree.search(1));
 		System.out.println(searchTree.search(-333));
 		
-		searchTree.delete(33);
+		//searchTree.delete(33);
 		
 		searchTree.inorder();
+		System.out.println("Inorder stack..");
+		System.out.println();
+		BinarySearchTree.inorderStack(searchTree.root);
+		System.out.println();
+		System.out.println("Preorder stack..");
+		System.out.println();
+		BinarySearchTree.preorderStack(searchTree.root);
+		System.out.println();
+		System.out.println("Postorder stack..");
+		System.out.println();
+		BinarySearchTree.postorderStack(searchTree.root);
 	}
 	
 	
