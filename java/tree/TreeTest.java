@@ -20,8 +20,16 @@ public class TreeTest {
 		
 		searchTree.inorder();
 		
+		System.out.println();
+		System.out.print("The size of the tree is ");
+		
+		System.out.println(searchTree.size(searchTree.root));
+		
 		System.out.println(searchTree.search(1));
 		System.out.println(searchTree.search(-333));
+		System.out.println("Search iteratively");
+		System.out.println(searchTree.searchIterative(1));
+		System.out.println(searchTree.searchIterative(-333));
 		
 		//searchTree.delete(33);
 		
@@ -37,6 +45,8 @@ public class TreeTest {
 		System.out.println("Postorder stack..");
 		System.out.println();
 		BinarySearchTree.postorderStack(searchTree.root);
+		
+		
 	}
 	
 	

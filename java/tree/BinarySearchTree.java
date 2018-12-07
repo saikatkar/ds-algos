@@ -149,6 +149,40 @@ public class BinarySearchTree {
 			return search (root.right,key);
 		}
 	}
+	/**
+	 * @param key
+	 * @return
+	 */
+	public boolean searchIterative(int key) {
+		Node found = searchIterative(root, key);
+		if(found == null) {
+			return false;
+		}else {
+			return true;
+		}
+	}
+	/**
+	 * @param root
+	 * @param key
+	 * @return
+	 */
+	private Node searchIterative(Node root,int key) {
+		if(root==null || root.key ==key) {
+			return root;
+		}
+		
+		while(root!=null) {
+			if(root.key > key) {
+				root = root.left;
+			}else if(root.key < key) {
+				root = root.right;
+			}else {
+				
+				return root;
+			}
+		}
+		return root;
+	}
 	
 	public void delete(int key) {
 		deleteRec(root,key);
@@ -184,6 +218,15 @@ public class BinarySearchTree {
 		
 		return root;
 			
+	}
+	
+	public int size(Node root) {
+		
+		if(root ==null) {
+			return 0;
+		}
+		
+		return size(root.left) + size(root.right)+1;
 	}
 	
 

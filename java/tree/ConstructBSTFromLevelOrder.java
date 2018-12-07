@@ -12,11 +12,13 @@ public class ConstructBSTFromLevelOrder {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int arr [] = {7, 4, 12, 3, 6, 8, 1, 5, 10};
+		int arr [] =  {7, 4, 12, 3, 6, 8, 1, 5, 10};
 		ConstructBSTFromLevelOrder constructBSTFromLevelOrder = new ConstructBSTFromLevelOrder();
 		Node root = constructBSTFromLevelOrder.construct(arr);
+		if (root!=null) {
+			BinarySearchTree.inorderStack(root);
+		}
 		
-		BinarySearchTree.inorderStack(root);
 
 	}
 	
@@ -25,7 +27,8 @@ public class ConstructBSTFromLevelOrder {
 		NodeDetails root = new NodeDetails(arr[0],Integer.MIN_VALUE,Integer.MAX_VALUE);
 		queue.add(root);
 		NodeDetails prevNode = null;
-		for(int i=1;i<arr.length;) {
+		int i =1;
+		for( ;i<arr.length && !queue.isEmpty();) {
 			NodeDetails node = null;
 			prevNode = queue.poll();
 			if(arr[i] > prevNode.minValue && arr[i] < prevNode.key) {
@@ -44,6 +47,11 @@ public class ConstructBSTFromLevelOrder {
 			}
 			
 				
+		}
+		
+		if(i!=arr.length) {
+			System.out.println("Level order traversal not possible");
+			return null;
 		}
 		return root;
 	}

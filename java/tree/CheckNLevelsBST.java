@@ -25,7 +25,7 @@ public class CheckNLevelsBST {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		 int arr[] = { 500, 200, 90, 250, 100 }; 
+		 int arr[] = { 500, 200, 90, 80, 70 }; 
 		 System.out.println(check(arr));
 	}
 	
