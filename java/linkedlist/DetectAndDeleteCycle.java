@@ -1,4 +1,4 @@
-package com.my.linkedlist;
+package linkedlist;
 
 /**
  * Write a function detectAndRemoveLoop() that checks whether a given Linked List contains loop and if loop is present then removes the loop and returns true.

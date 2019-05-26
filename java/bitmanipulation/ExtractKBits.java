@@ -1,4 +1,4 @@
-package test;
+package bitmanipulation;
 
 /**
  * Extract ‘k’ bits from a given position in a number.

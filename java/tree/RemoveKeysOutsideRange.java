@@ -1,4 +1,4 @@
-package me.practice.tree;
+package tree;
 
 /**
  * Remove BST keys outside the given range

@@ -1,4 +1,4 @@
-package com.my.linkedlist;
+package linkedlist;
 
 /**
  * Given a linked list, write a function to reverse every alternate k nodes

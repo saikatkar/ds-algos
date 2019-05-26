@@ -1,4 +1,4 @@
-package test;
+package bitmanipulation;
 
 /**
  * Find the element that appears once

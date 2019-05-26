@@ -1,4 +1,4 @@
-package test;
+package bitmanipulation;
 
 /**
  * Reverse the bits of an integer.

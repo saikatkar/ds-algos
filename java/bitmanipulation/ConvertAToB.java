@@ -1,4 +1,4 @@
-package test;
+package bitmanipulation;
 
 /**
  * Given two numbers ‘a’ and b’. Write a program to count number of bits 

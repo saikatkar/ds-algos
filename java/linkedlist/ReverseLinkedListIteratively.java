@@ -1,4 +1,4 @@
-package com.my.linkedlist;
+package linkedlist;
 
 /**
 	 * Given pointer to the head node of a linked list, the task is to reverse the linked list. 

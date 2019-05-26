@@ -1,4 +1,4 @@
-package test;
+package bitmanipulation;
 
 /**
  * Write a function Add() that returns sum of two integers. The function should not use any of the arithmetic operators (+, ++, –, -, .. etc).

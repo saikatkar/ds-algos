@@ -1,4 +1,4 @@
-package me.practice.tree;
+package tree;
 
 /**
  * Lowest Common Ancestor in a Binary Search Tree.

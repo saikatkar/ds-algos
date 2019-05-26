@@ -1,4 +1,4 @@
-package me.practice.tree;
+package tree;
 
 /**
  * Largest number in BST which is less than or equal to N

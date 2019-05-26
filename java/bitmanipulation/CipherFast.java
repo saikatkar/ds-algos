@@ -1,4 +1,4 @@
-package test;
+package bitmanipulation;
 
 /**
  * https://www.hackerrank.com/challenges/cipher

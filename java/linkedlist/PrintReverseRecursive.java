@@ -1,4 +1,4 @@
-package com.my.linkedlist;
+package linkedlist;
 
 /**
  * Print reverse of a Linked List without actually reversing

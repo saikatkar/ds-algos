@@ -1,4 +1,4 @@
-package test;
+package bitmanipulation;
 
 public class AndProduct
 {

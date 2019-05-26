@@ -1,4 +1,4 @@
-package me.practice.tree;
+package tree;
 
 public class FindMinDistanceBetweenTwoNodes {
 	static BinarySearchTree searchTree = new BinarySearchTree();

@@ -1,4 +1,4 @@
-package me.practice.tree;
+package tree;
 
 /**
  * Given preorder traversal of a binary search tree, construct the BST((Recursion based solution).

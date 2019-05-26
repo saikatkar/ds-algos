@@ -1,4 +1,4 @@
-package me.practice.tree;
+package tree;
 
 /**
  * Check if given sorted sub-sequence exists in binary search tree

@@ -1,4 +1,4 @@
-package test;
+package bitmanipulation;
 
 /**
  * Swap bits in a given number<br><br>

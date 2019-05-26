@@ -1,4 +1,4 @@
-package test;
+package bitmanipulation;
 
 /**
  * Count the set bits in the range from 1 to n

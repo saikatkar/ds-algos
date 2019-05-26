@@ -1,6 +1,6 @@
-package com.my.linkedlist;
+package linkedlist;
 
-import com.my.linkedlist.MyLinkedList.Node;
+import linkedlist.MyLinkedList.Node;
 
 /**
  * @author saikatkar1

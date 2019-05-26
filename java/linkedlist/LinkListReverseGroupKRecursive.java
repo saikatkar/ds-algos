@@ -1,4 +1,4 @@
-package com.my.linkedlist;
+package linkedlist;
 
 /**
  * Reverse a Linked List in groups of given size | Set 1

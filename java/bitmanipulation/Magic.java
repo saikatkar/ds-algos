@@ -1,4 +1,4 @@
-package test;
+package bitmanipulation;
 
 
 //Navi got a task at school to collect N stones. 

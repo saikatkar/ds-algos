@@ -1,4 +1,4 @@
-package me.practice.tree;
+package tree;
 
 /**
  * Check given array of size n can represent BST of n levels or not

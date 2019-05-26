@@ -1,4 +1,4 @@
-package me.practice.tree;
+package tree;
 
 /**
  * Given a BST, transform it into greater sum tree where each node contains sum of all nodes greater than that node.

@@ -1,4 +1,4 @@
-package me.practice.tree;
+package tree;
 
 /**
  * Given a Binary Search Tree(BST), convert it to a Binary Tree such that every key of the original BST is changed to key plus sum of all smaller keys in BST.

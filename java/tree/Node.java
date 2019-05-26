@@ -1,4 +1,4 @@
-package me.practice.tree;
+package tree;
 // Java program to construct BST from given preorder traversal 
 
 // A binary tree node 
