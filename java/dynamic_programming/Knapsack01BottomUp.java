@@ -7,7 +7,7 @@ import java.util.Arrays;
  * @author saikatkar
  *
  */
-public class Knapsack01 {
+public class Knapsack01BottomUp {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
