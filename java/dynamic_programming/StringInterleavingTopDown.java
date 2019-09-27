@@ -6,5 +6,8 @@ public class StringInterleavingTopDown {
 		// TODO Auto-generated method stub
 
 	}
+	public boolean stringInterleaving() {
+		return true;
+	}
 
 }
