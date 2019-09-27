@@ -27,7 +27,7 @@ Explanation: The longest common subsequence is "psspt".
  * @author saikatkar
  *
  */
-public class LongestCommonSubsequenceTopDown {
+public class LongestCommonSubsequenceBottomUP {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

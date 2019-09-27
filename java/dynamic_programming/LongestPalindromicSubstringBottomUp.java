@@ -8,13 +8,14 @@ public class LongestPalindromicSubstringBottomUp {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String str = "abdbca";
+		String str = "ac";
 		boolean dp[][] = new boolean[str.length()][str.length()];
 		System.out.println(longestPalindromic(dp, str));
 
 	}
 	
 	public static int longestPalindromic(boolean dp[][],String str) {
+		int startIndex =0;
 		
 		for(int i=0;i<str.length();i++) {
 			dp[i][i] = true;
@@ -27,10 +28,12 @@ public class LongestPalindromicSubstringBottomUp {
 					if(end-start==1 || dp[start+1][end-1]) {
 						dp[start][end] = true;
 						maxLength = Math.max(maxLength, end-start+1);
+						startIndex = start;
 					}
 				}
 			}
 		}
+		System.out.println(str.substring(startIndex, startIndex+maxLength));
 		return maxLength;
 	}
 
