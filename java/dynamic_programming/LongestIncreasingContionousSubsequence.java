@@ -1,7 +1,5 @@
 package dynamic_programming;
 
-import java.util.Arrays;
-
 /**
  * Given an unsorted array of integers, find the length of longest continuous increasing subsequence (subarray).
 
@@ -13,7 +11,7 @@ Even though [1,3,5,7] is also an increasing subsequence, it's not a continuous o
  * @author saikatkar
  *
  */
-public class LongestIncreasugContionousSubsequence {
+public class LongestIncreasingContionousSubsequence {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
