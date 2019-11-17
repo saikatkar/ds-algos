@@ -18,6 +18,8 @@ public class TrieSTMain {
 		trieST.insert("caption");
 		trieST.insert("cataclysmic");
 		trieST.insert("captain");
+		trieST.insert("captaincy");
+
 		
 		List<String> list = trieST.startWithKeys("capt");
 		
