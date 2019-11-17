@@ -2,6 +2,10 @@ package trie;
 
 import java.util.List;
 
+/**
+ * @author saikatkar
+ *
+ */
 public class TrieSTMain {
 
 	public static void main(String[] args) {
