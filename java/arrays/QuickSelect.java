@@ -11,7 +11,7 @@ public class QuickSelect {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int arr [] = {-2,1,0,7,9,8,5};
-		int k =7;
+		int k =4;
 		
 		System.out.println(quickSelect(arr, 0, arr.length-1, k));
 		System.out.println(Arrays.toString(arr));
