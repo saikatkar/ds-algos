@@ -6,7 +6,7 @@ public class QuickSelect {
 		// TODO Auto-generated method stub
 
 		int arr[] = {10,5,8,3,12,15,6};
-		System.out.println(quickSelect(arr, 0, arr.length-1, 8));
+		System.out.println(quickSelect(arr, 0, arr.length-1, 3));
 	}
 	
 	public static int quickSelect(int arr[],int low,int high,int k) {
