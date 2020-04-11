@@ -1,5 +1,7 @@
 package dynamic_programming;
 
+import java.util.Arrays;
+
 /**
  * Problem Statement
 
@@ -44,8 +46,10 @@ public class MinimumEditDistanceTopDown {
 		String s1 = "passpot";
 		String s2 = "ppsspqrt";
 		Integer [][] dp = new Integer[s1.length()][s2.length()];
-		
+
 		System.out.println(medTopDown(s1, s2, dp,0, 0));
+		System.out.println(Arrays.deepToString(dp));
+
 
 	}
 	
@@ -68,7 +72,6 @@ public class MinimumEditDistanceTopDown {
 				dp[i1][i2] = Math.min(c3,Math.min(c1, c2));
 			}
 		}
-		
 		
 		return dp[i1][i2];
 	}
